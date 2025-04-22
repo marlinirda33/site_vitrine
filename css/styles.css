@@ -1,0 +1,1185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #f5f5f5;
+}
+
+section {
+    padding: 20px 15%;
+}
+ul {
+    list-style: none;
+}
+.footer-column ul {
+    list-style-type: disc;
+    color: #000; 
+}
+.footer-column ul li a {
+    color: #000; 
+}
+.footer-column ul li a:hover {
+    color: green;
+}
+
+a{
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+}
+.home {
+    min-height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.9)), url('../images/ong.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 230px;
+    width: 100%;
+    margin-top: 80px;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+.menu {
+    position: fixed; /* Fixe la barre de navigation en haut */
+    top: 0; /* Positionnée tout en haut de la page */
+    left: 0;
+    width: 100%; /* Prend toute la largeur */
+    background-color: white; /* Couleur de fond */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre */
+    z-index: 1000; /* S'assure qu'elle est au-dessus du contenu */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 110px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.menu ul li a:hover {
+    color: green; /* Change la couleur au survol */
+}
+.openbtn {
+    font-size: 24px; /* Taille de l'icône du menu */
+    background: none; /* Supprime le fond */
+    border: none; /* Supprime la bordure */
+    color: black; /* Couleur de l'icône */
+    cursor: pointer; /* Curseur en mode clic */
+    display: none; /* Caché par défaut sur les grands écrans */
+}
+/*-----------------------------------*/
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex; /* Permet de mieux gérer l'alignement */
+    align-items: center; /* Centre le logo verticalement */
+    order: 0;
+}
+
+.logo img {
+    height: 200px; /* Augmente la hauteur du logo */
+    width: auto; /* Garde les proportions */
+    max-width: 100%; /* Empêche qu'il devienne trop grand */
+    margin-top: 20px;
+    position: absolute;
+
+}
+.links {
+    display: flex;
+}
+
+.links li {
+    margin: 20px;
+}
+.links li a {
+    color: #fff;
+    position: relative;
+}
+.links li a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    /* background-color: rgb(61, 177, 61); */
+    height: 4px;
+    width: 0%;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.links li a:hover:after {
+    width: 100%;
+}
+
+/*home_page_content*/
+.home_page_content {
+    position: absolute;
+    bottom: 60px;
+}
+.home_page_content span {
+    display: flex;
+    align-items: center;
+}
+.home_page_content span i {
+    color: rgb(26, 105, 33);
+    margin-right: 15px;
+}
+.home_page_content span p {
+    color: #fff;
+    font-weight: bold;
+}
+.home_page_content h1 {
+    margin: 20px 0;
+    font-size: 70px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 80px;
+}
+.home_page_content .text {
+    color: #b5b5b5;
+    margin-bottom: 30px;
+}
+.white_btn {
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    font-size: 15px;
+    color: #fff;
+    padding: 10px 30px;
+    transition: 0.5s;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.white_btn:hover {
+    background-color: rgb(12, 59, 12);
+    color: #fff;
+}
+.white_btn i {
+    margin-left: 20px;
+}
+
+/* image_box */
+
+.image_box {
+    position: absolute;
+    bottom: -140px;
+    right: 15%;
+}
+
+
+.image_box img {
+    border-radius: 100px;
+    width: 600px;
+    height: 500px;
+    object-fit: cover;
+    box-shadow: 0 32px 80px -32px rgba(0,0,0,.24);
+}
+
+.image_box p {
+    margin-top: 20px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.image_box i {
+    color: green;
+    margin-right: 15px;
+}
+/* text_section */
+.text_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* font-weight: bold; */
+    position: relative;
+    padding: 40px 0;
+}
+.textsection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* font-weight: bold; */
+    position: relative;
+    /*new*/
+    padding: 40px 40px;
+}
+
+.text_section h2 {
+    font-size: 0px;
+    font-weight: 600;
+}
+.textsection h2 {
+    font-size: 0px;
+    font-weight: 600;
+}
+  .text_sectione {
+    display: flex; /* Utilisation de Flexbox pour aligner l'image et le texte horizontalement */
+    justify-content: flex-start; /* Aligne le contenu à gauche */
+    padding: 0; /* Supprime les marges internes */
+    background: #f4f4f4; /* Couleur de fond */
+  }
+
+  /* === Conteneur principal de l'image et du texte === */
+  .container {
+    display: flex; /* Aligne l'image et le texte en ligne */
+    align-items: center; /* Centre les éléments verticalement */
+  }
+  
+  /* === Demi-cercle pour l'image === */
+  .image_boxe {
+    width: 50%; /* L'image occupe 40% de la largeur */
+    height: 100%; /* Prend toute la hauteur */
+    border-top-right-radius: 0%; /* Crée l'arrondi en haut à droite */
+    border-top-left-radius: 30%; /* Crée l'arrondi en haut à droite */
+    border-bottom-right-radius: 30%; /* Crée l'arrondi en bas à droite */
+    border-bottom-left-radius: 30%; /* Crée l'arrondi en bas à droite */
+    overflow: hidden; /* Cache les parties qui dépassent */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Nécessaire pour placer le pseudo-élément */
+  }
+  .image_boxe::before {
+    content: ""; /* Nécessaire pour le pseudo-élément */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(77, 76, 75, 0.9));
+    z-index: 1; /* Place le dégradé au-dessus de l'image */
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+}
+  
+  /* === Style de l'image === */
+  .image_boxe img {
+    width: 100%; /* L'image prend toute la largeur du conteneur */
+    height: 100%; /* L'image prend toute la hauteur */
+    object-fit: cover; /* L'image garde ses proportions sans déformation */
+    z-index: 0; /* Place l'image sous le dégradé */
+  }
+  
+  /* === Boîte de texte === */
+  .text_boxis {
+    width: 50%; /* Le texte occupe le reste de l'espace */
+    padding: 50px; /* Espace autour du texte */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre le texte verticalement */
+  }
+  
+  /* === Titre ASEVEC === */
+  .text_boxis p {
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+    font-size: 2em; /* Agrandit le titre */
+  }
+  
+  /* === Paragraphe de description === */
+  .text_boxis h2 {
+    font-size: 1em;
+    line-height: 1.5; /* Améliore la lisibilité */
+    text-align: justify; /* Justifie le texte */
+  }
+    
+/*++++++++++++++++++++++++++++++++++++++*/
+/* owner */
+.owner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 120px 0;
+    height: 70vh;
+    margin-bottom: 170px;
+    align-items: center;
+}
+.image_box_owner {
+    width: 45%;
+    height: 100%;
+}
+.image_box_owner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 60px;
+    box-shadow: 0 32px 80px -32px rgba(0,0,0,.24);
+}
+.content_box {
+    width: 45%;
+}
+
+.small_title {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    position: relative;
+    width: fit-content;
+    color: green;
+}
+
+.small_title:before {
+    content: "";
+    position: absolute;
+    background: #f9ad4a;
+    font-size: 5.5rem; /* Taille de l'icône */
+    left: -65px;
+    bottom: 8px;
+    width: 50px;
+    height: 10px;
+    border-radius: 6px;
+}
+/*+++++++++++++++++++++++++++++++*/
+/* owner */
+.ownere {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 120px 0;
+    height: 70vh;
+    margin-bottom: 90px;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.image_box_ownere {
+    width: 45%;
+    height: 100%;
+}
+.image_box_ownere img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 60px;
+    box-shadow: 0 32px 80px -32px rgba(0,0,0,.24);
+}
+.content_boxe {
+    width: 45%;
+}
+.content_boxe h1 {
+    font-size: 2.5rem; /* Taille du titre */
+    margin-bottom: 20px; /* Espace en bas du titre */
+}
+
+.small_titl {
+    display: flex; /* Met les éléments sur la même ligne */
+    align-items: center; /* Centre verticalement */
+    gap: 10px; /* Espace entre l’icône et le texte */
+    margin: 15px 0;
+}
+/* Icône verte */
+.small_titl i {
+    font-size: 3.5rem; /* Taille de l'icône */
+    color: #f9ad4a; /* Couleur verte pour l'icône */
+    margin-right: 10px; /* Espace entre l’icône et le texte */
+}
+
+.big_title {
+    margin: 20px 0;
+    font-size: 40px;
+    line-height: 10px;
+    font-weight: 100;
+    margin-bottom: 150px;
+}
+.text {
+    margin-bottom: 20px;
+}
+.dark_btn {
+    color: #000;
+    border: 1px solid #000;
+}
+
+.content_box button {
+    margin-top: 30px;
+}
+.dark_btn:hover {
+    background-color: rgb(12, 59, 12);
+    color: #fff;
+}
+.image_box_owner p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.content_box p {
+    margin-top: 20px;
+}
+/* background */
+.background {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    /* margin-top: 0px; */
+    margin-bottom: 0px;
+}
+.domain {
+    
+    justify-content: center;
+    padding:  0;
+    /* display: flex;
+     overflow: hidden; */
+}
+
+.background .image {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    /*+---------------5*/
+    position: relative;
+    z-index: 0;
+}
+.background img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* z-index: -100; */
+    animation: infinite animation1;
+    animation-duration: 50s;
+}
+@keyframes animation1 {
+    from {
+        transform: scale(1);
+    }to {
+        transform: scale(2);
+    }
+}
+.content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 70%;
+    display: grid; /*flex*/
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 25px;
+    justify-content: center;
+    /* justify-content: space-around; */
+    transform: translate(-50%, -50%);
+    z-index: 2;  
+}
+
+/* 📦 Style des text-box */
+.text-box {
+    /* width: 30%; */
+    background-color: white;
+    box-shadow: 0 32px 80px -32px rgba(0, 0, 0, 0.24);
+    padding: 55px;
+    border-radius: 85px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.text_box span {
+    font-weight: bold;
+}
+
+.text-box h3{
+    margin: 15px 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+.text-box p {
+    margin-bottom: 25px;
+}
+.text-box h6 {
+    font-size: 14px;
+    margin: 15px 0;
+}
+.text-box i {
+    margin-right: 10px;
+    color: green;
+}
+
+.big h2 {
+    font-size: 30px;
+}
+
+.reasons {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    overflow: hidden; /* Cache les boîtes qui sortent de la vue */
+}
+.reason {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    /* overflow: hidden;  */
+}
+
+/* ====== Carrousel ====== */
+.carousel {
+    width: 100%;
+    max-width: 1100px;
+    overflow: hidden;
+}
+.carouse {
+    width: 100%;
+    max-width: 1000px;
+    /* overflow: hidden; */
+}
+
+/* ====== Services : Conteneur des boîtes ====== */
+.services {
+    display: flex;
+    animation: scroll 20s linear infinite; /* Animation infinie */
+    width: calc(300px * 6); /* Largeur totale en fonction du nombre de boîtes */
+}
+.servics {
+    top: 45%;
+    left: 50%;
+    /* width: 70%; */
+    display: grid; /*flex*/
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+/* ====== Boîte ====== */
+.box {
+    background: #f5f5f5;
+    border-radius: 30px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 25px 35px rgba(128, 99, 46, 0.1);
+    text-align: center;
+    margin: 0 10px;
+    width: 300px;
+    flex: 0 0 auto; /* Empêche les boîtes de se redimensionner */
+}
+
+/* ====== Image ====== */
+.box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* ====== Titre ====== */
+.box h2 {
+    color: #333;
+    font-size: 22px;
+    margin: 15px 0;
+}
+/*==========================*/
+.bo {
+    background: #f5f5f5;
+    border-radius: 30px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 25px 35px rgba(128, 99, 46, 0.1);
+    text-align: center;
+    /* margin: 0 10px; */
+    width: 600px;
+    flex: 0 0 auto; /* Empêche les boîtes de se redimensionner */
+}
+
+/* ====== Image ====== */
+.bo img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* ====== Titre ====== */
+.bo h2 {
+    color: #333;
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+/* ====== Animation ====== */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* Défilement vers la gauche */
+    }
+}
+
+.testimonials {
+    margin: 120px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.left , .right {
+    width: 48%;
+}
+.comment {
+    padding: 50px;
+    background-color: antiquewhite;
+    border-radius: 150px;
+    transition: 0.5s;
+}
+
+.comment img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.comment:hover {
+    box-shadow: 0 32px 80px -32px rgba(0, 0, 0, .24);
+}
+.down {
+    margin-bottom: 55px;
+}
+.profil {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* ranked */
+.ranked  {
+    text-align: center;
+    border-top: 1px solid #e1e1e1;
+}
+.ranked .big_title{
+    font-size: 20px;
+}
+
+.footer-contain {
+    display: grid;  /* Utilisation de CSS Grid pour la disposition */
+    grid-template-columns: repeat(3, 1fr);  /* Crée 2 colonnes de taille égale */
+    gap: 20px;  /* Espacement entre les colonnes */
+    max-width: 900px;  /* Largeur maximale du footer */
+    margin: 0 auto;  /* Centre le conteneur horizontalement */
+    margin-top: 40px;
+}
+
+/* ====== Colonne ====== */
+.footer-column {
+    display: flex;  /* Utilisation de Flexbox pour aligner les éléments en colonne */
+    flex-direction: column;  /* Aligne les éléments verticalement */
+    align-items: center;  /* Centre les éléments horizontalement */
+}
+.footer-column h3{
+    margin-bottom: 20px;
+}
+
+/* ====== Icônes ====== */
+.footer-column i {
+    color: green;  /* Couleur de l'icône en vert */
+    margin-right: 8px;  /* Ajoute un espace de 8px entre l'icône et le texte */
+}
+
+/* ====== Copyright ====== */
+footer p:last-child {
+    margin-top: 20px;  /* Ajoute de l'espace au-dessus du texte Copyright */
+    font-size: 12px;  /* Réduit la taille de la police */
+}
+
+footer {
+    margin-top: 20px;
+    background: linear-gradient(25deg,  #ecebec,  black);
+    padding: 40px;
+    text-align: center;
+    color: black;
+    border-top-left-radius: 200px;
+}
+
+.footer-container {
+    position: absolute; /* Permet de placer l'élément indépendamment du reste */
+    right: 4%; /* Décale la boîte vers la droite */
+    bottom: -5578px; /* Place la boîte au-dessus du footer */
+    width: 350px; /* Définition d'une largeur fixe pour éviter que le texte ne s'étale trop */
+}
+
+.footer-contact {
+    /* background: linear-gradient(105deg, #ecebec,  #d1aa86, #ecebec); */
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: left;
+}
+
+.footer-contact h3 {
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-item i {
+    font-size: 34px;
+    color: #18a737;
+    margin-right: 15px;
+    margin-left: 25px;
+}
+
+.contact-item h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.contact-item p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons i {
+    font-size: 24px;
+    margin: 0 10px;
+    color: black;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; /* Animation fluide */
+}
+
+.social-icons i:hover {
+    color: white;
+    transform: scale(1.3); /* Agrandissement de 30% */
+}
+
+.footer-copy {
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+}
+
+/*+++++++++++++++++++++++++*/
+.openbtn {
+    /* display: none; */
+    order: 2;
+}
+
+.closebtn {
+    display: none;
+    /* order: 3; */
+}
+.closebtn {
+    font-size: 24px; /* Taille de l'icône du menu */
+    background: none; /* Supprime le fond */
+    border: none; /* Supprime la bordure */
+    color: black; /* Couleur de l'icône */
+    cursor: pointer; /* Curseur en mode clic */
+    display: none; /* Caché par défaut sur les grands écrans */
+    align-self: flex-end; /* ✅ Aligne le bouton à droite du conteneur */
+    /* margin-bottom: 10px; */
+    margin-right: 10px; /* Optionnel : espace à droite */
+}
+.menu button {
+font-weight: bold;}
+
+
+html, body {
+    overscroll-behavior: none;
+}
+/*----------------------------------------------*/
+/* Styles pour les écrans de téléphones (largeur maximale de 768px) */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    
+    .menu ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .logo {
+        order: 0; /* logo à droite */
+    }
+
+    .openbtn {
+        order: 2; /* bouton à gauche */
+        
+    }
+
+    /* Masque le logo quand le menu mobile est affiché */
+    .links.show ~ .logo {
+        display: none;
+    }
+    /* Cache le logo quand la classe 'hide-logo' est présente sur .menu */
+    .menu.hide-logo .logo {
+        display: none;
+    }
+    .links.show {
+        display: flex;
+    }
+    .openbtn, .closebtn {
+        display: block;
+    }
+    .links li {
+        margin: 10px 0;
+    }
+
+    /* Accueil */
+    .home_page_content h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .image_box {
+        display: none;
+    }
+
+    /* Text Section */
+    .container, .owner, .ownere, .testimonials {
+        flex-direction: column;
+    }
+     .image_box_owner, .image_box_ownere, .left, .right {
+        padding: 20px;
+        width: 100%;
+    }
+    .text_boxis, .content_box, .content_boxe {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Background */
+    .content {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 100%;
+        grid-template-columns: 1fr; /* une seule colonne */
+        padding: 20px;
+    }
+    .background {
+        height: auto;
+    }
+    .text-box {
+        /* margin-top: 40px; */
+        padding: 20px;
+    }
+
+    /* Services & Réalisations */
+    .services, .servics {
+        flex-direction: column;
+        width: 100%;
+    }
+    .box, .bo {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    /* Footer */
+    .footer-contain {
+        grid-template-columns: 1fr;
+    }
+    .footer-container {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        margin-top: 20px;
+    }
+    .bo {
+        width: 100%; /* Prend toute la largeur sur les petits écrans */
+        margin: 10px 0; /* Ajoute des marges verticales */
+    }
+
+    .bo img {
+        max-width: 100%; /* L'image ne dépasse pas la largeur du conteneur */
+        height: auto; /* La hauteur s'ajuste automatiquement */
+    }
+
+    .servics {
+        grid-template-columns: 1fr; /* Une seule colonne sur les petits écrans */
+    }
+    .textsection {
+        padding-top: 90px;
+    }
+
+    
+}
+/* Pour les écrans d’ordinateurs standards */
+@media screen and (max-width: 1200px) {
+    /* Footer */
+    .footer-contain {
+        grid-template-columns: 1fr;
+    }
+    .footer-container {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        margin-top: 20px;
+    }
+    /* Masque le logo quand le menu mobile est affiché */
+    .links.show ~ .logo {
+        display: none;
+    }
+    /* Cache le logo quand la classe 'hide-logo' est présente sur .menu */
+    .menu.hide-logo .logo {
+        display: none;
+    }
+}
+/* Pour les écrans larges (21 pouces et plus) */
+@media screen and (max-width: 1400px) {
+    /* Footer */
+    .footer-contain {
+        grid-template-columns: 1fr;
+    }
+    .footer-container {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        margin-top: 20px;
+    }
+    /* Masque le logo quand le menu mobile est affiché */
+    .links.show ~ .logo {
+        display: none;
+    }
+    /* Cache le logo quand la classe 'hide-logo' est présente sur .menu */
+    .menu.hide-logo .logo {
+        display: none;
+    }
+  }
+/* Styles pour les tablettes (largeur maximale de 1024px) */
+@media (max-width: 1024px) {
+    .menu {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    
+    .menu ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .logo {
+        order: 0; /* logo à droite */
+    }
+
+    .openbtn {
+        order: 2; /* bouton à gauche */
+    }
+
+    /* Masque le logo quand le menu mobile est affiché */
+    .links.show ~ .logo {
+        display: none;
+    }
+    /* Cache le logo quand la classe 'hide-logo' est présente sur .menu */
+    .menu.hide-logo .logo {
+        display: none;
+    }
+    .links.show {
+        display: flex;
+    }
+    .openbtn, .closebtn {
+        display: block;
+    }
+    .links li {
+        margin: 10px 0;
+    }
+    .home_page_content h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .image_box {
+        right: 5%;
+    }
+    .content {
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 100%;
+        padding: 20px;
+    }
+    .background {
+        height: auto;
+    }
+    .services, .servics {
+        flex-direction: row;
+    }
+    .box, .bo {
+        width: 45%;
+    }
+    .bo {
+        width: 80%; /* Prend 80% de la largeur sur les tablettes */
+    }
+    /* Footer */
+    .footer-contain {
+        grid-template-columns: 1fr;
+    }
+    .footer-container {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        margin-top: 20px;
+    }
+}
+
+
+  .mission-section {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .mission-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  /* ======= CARROUSEL HORIZONTAL ======= */
+   .carousel-container {
+    position: relative;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+  
+   .carousel {
+    display: flex;
+    gap: 30px;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 20px;
+    overflow-x: hidden;
+    padding: 20px 0;
+  } 
+ 
+  
+  /* ======= CARTES ======= */
+  .mission-card {
+    scroll-snap-align: center;
+    position: relative;
+    flex: 0 0 auto;
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .mission-card.active {
+    transform: scale(1.1);
+    z-index: 2;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  }
+  
+  .mission-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* ======= OVERLAY TEXTE SUR L’IMAGE ======= */
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+  
+  .overlay h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  
+  .overlay p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  /* ======= PAGINATION CERCLES ======= */
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    gap: 8px;
+  }
+  
+  .pagination span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ddd;
+    display: inline-block;
+    transition: background 0.6s;
+  }
+
+  /*+++++++++++++*/
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 40%;
+    background-color: #bbb;
+    margin: 0 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #555;
+}
+.carousel-arrow:hover {
+    opacity: 1;
+}
+.prev-arrow {
+    left: 10px;
+}
+
+.next-arrow {
+    right: 10px;
+}
